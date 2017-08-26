@@ -1,5 +1,10 @@
-nav#menu.fixed-menu
-    ul
-        each link, title in nav.navPages
-            li
-                a(href= link)= title
+#menu.fixed-menu
+    +logotype(nav.logo.logoSrc, nav.logo.logoAlt, nav.logo.link, nav.logo.title)
+
+    nav
+        ul
+            each link, title in nav.navPages
+                li
+                    a(href= link)= title
+
+    //.cart

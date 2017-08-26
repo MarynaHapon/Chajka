@@ -1,10 +1,17 @@
 {
   "navPages": {
-    "про нас": "#about",
-    "продукція": "#product",
-    "галерея": "#gallery",
-    "новини": "#news",
-    "партнери": "#partners",
-    "контакти": "#contacts"
+    "ПРО НАС": "#about",
+    "ПРОДУКЦІЯ": "#product",
+    "ГАЛЕРЕЯ": "#gallery",
+    "НОВИНИ": "#news",
+    "ПАРТНЕРИ": "#partners",
+    "КОНТАКТИ": "#contacts"
+  },
+
+  "logo": {
+    "logoSrc": "static/img/general/logotype.png",
+    "logoAlt": "logotype",
+    "link": "index.html",
+    "title": "CHAJKA"
   }
 }

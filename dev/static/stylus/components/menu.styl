@@ -1,32 +1,48 @@
-ul, li
-    list-style none
-    margin 0
-    padding 0
-
 .fixed-menu
-    position fixed
-    top 0
-    left 0
-    width 100%
-    height 60px
-    background #FFF
+    position(fixed, 0 , ,0)
+    size(100%, 70px)
     box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
-    text-align center
+    background linear-gradient(90deg, $persian-green, $jungle-green)
     z-index 100
+
     li
         display inline-block
         vertical-align top
         zoom 1
 
-a
-    display block
-    line-height 60px
-    color #444
-    text-decoration none
-    padding 0 20px
-    transition 0.2s
+
+nav
+    width 100%
+    background-color $white
+    margin 10px 0 0
+
+    ul
+        margin 0 0 0 auto
+        width fit-content
+
+    a
+        display block
+        line-height 50px
+        color $baltic-sea
+        text-decoration none
+        padding 0 20px
+        border-bottom 10px solid transparent
+
 
 .active
     a
-        background #222
-        color #FFF
+        color $jungle-green
+        border-bottom 10px solid $jungle-green
+
+
+.logo
+    position(fixed, 0, , , 12px)
+    display flex
+    flex-direction column-reverse
+    justify-content space-around
+    align-items center
+    size(110px)
+    background-color $white
+    box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
+    font-weight 700
+    color $persian-green
