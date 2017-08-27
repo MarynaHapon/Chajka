@@ -4,11 +4,7 @@
         line-height 30px
 
 
-@media screen and (max-width: 480px)
-    .logo
-        background-color transparent
-        color transparent
-        box-shadow none
+//@media screen and (max-width: 480px)
 
 
 @media screen and  (max-width: 768px)
@@ -16,7 +12,32 @@
         font-size 35px
         line-height 40px
 
+    .logo
+        margin  12px 0 0 10px
+        size(110,auto)
+        background-color transparent
+        color transparent
+        line-height 0
+        box-shadow none
 
+    .navbar
+        display none
+
+        ul
+            overflow hidden
+            height 100vh
+            flex-direction column
+            align-items center
+            justify-content center
+            background-color $white
+
+            a
+                color $jungle-green
+
+
+@media screen and  (min-width: 769px)
+    .burger
+        display none
 
 
 @media screen and (max-width: 1024px)
