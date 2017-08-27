@@ -1,5 +1,5 @@
 # Chajka
-Website
+Website - [link](https://marynahapon.github.io/Chajka/build/index.html)
 
 ## Technologies
 
