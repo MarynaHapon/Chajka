@@ -13,8 +13,8 @@ $('.slogan-carousel').flickity({
     // sticky header
 $(window).on('scroll', function() {
     if ($(this).scrollTop() > 0) {
-        $('#header-top').addClass("navbar-fixed-top");
+        $('#menu-top').addClass("navbar-fixed-top");
     } else {
-        $('#header-top').removeClass("navbar-fixed-top");
+        $('#menu-top').removeClass("navbar-fixed-top");
     }
 });

@@ -1,9 +1,9 @@
 .fixed-menu
     position(fixed, 0 , ,0)
     size(100%, 10px)
-    //box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
+    box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
     background linear-gradient(90deg, $persian-green, $jungle-green)
-    margin 0 0 60px
+    margin 0 0 55px
     z-index 100
 
     li
@@ -13,6 +13,7 @@
 
 
 .navbar
+    max-width 1200px
     width 100%
     margin 10px 0 0
 
@@ -27,7 +28,7 @@
         color $white
         text-decoration none
         padding 0 20px
-        border-bottom 10px solid transparent
+        border-bottom 5px solid transparent
 
         &:hover
             color $jungle-green
@@ -35,19 +36,24 @@
 .active
     a
         color $baltic-sea
-        border-bottom 10px solid $jungle-green
+        border-bottom 5px solid $jungle-green
 
 
-#header-top
-    max-width 1200px
+#menu-top
+    //max-width 1200px
     width 100%
-    margin 0 auto
+    //margin 0 auto
     color $white
     transition 1s
 
+.menu-top-inner
+    max-width 1200px
+    width 100%
+    margin 0 auto
 
 .navbar-fixed-top
     background-color $white
+    box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
 
     a
         color $baltic-sea
@@ -56,13 +62,16 @@
         color transparent
         background-color transparent
         box-shadow none
-        margin  4px 0 0 -15px
+        margin  12px 0 0 10px
+        size(110,auto)
+        line-height 0
+        color transparent
+        background-color transparent
 
-
-
+        
 .logo
-    position(fixed, 0, , , )
-    margin 0 0 0 20px
+    position(absolute, 0, , , )
+    margin 0 0 0 10px
     display flex
     flex-direction column-reverse
     justify-content space-around

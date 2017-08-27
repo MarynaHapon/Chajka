@@ -1,11 +1,14 @@
 #menu.fixed-menu
-    #header-top
-        +logotype(nav.logo.logoSrc, nav.logo.logoAlt, nav.logo.link, nav.logo.title)
+    #menu-top
 
-        nav.navbar
-            ul
-                each link, title in nav.navPages
-                    li
-                        a(href= link)= title
+        .menu-top-inner
+            +logotype(nav.logo.logoSrc, nav.logo.logoAlt, nav.logo.link, nav.logo.title)
+
+            nav.navbar
+                ul
+                    each link, title in nav.navPages
+                        li
+                            a(href= link)= title
 
 
+            //a(href= "#").link &#9776;
