@@ -7,9 +7,11 @@
             p.about-subtitle= content.about.subtitle
 
             .about-item-list
-                +aboutItem(content.about.item.technology.title, content.about.item.technology.text)(class= "about-item-technology")
-                +aboutItem(content.about.item.rental.title, content.about.item.rental.text)(class= "about-item-rental")
-                +aboutItem(content.about.item.guarantee.title, content.about.item.guarantee.text)(class= "about-item-guarantee")
-                +aboutItem(content.about.item.partners.title, content.about.item.partners.text)(class= "about-item-partners")
+                .about-item-group
+                    +aboutItem(content.about.item.technology.title, content.about.item.technology.text)(class= "about-item-technology")
+                    +aboutItem(content.about.item.rental.title, content.about.item.rental.text)(class= "about-item-rental")
+                .about-item-group
+                    +aboutItem(content.about.item.guarantee.title, content.about.item.guarantee.text)(class= "about-item-guarantee")
+                    +aboutItem(content.about.item.partners.title, content.about.item.partners.text)(class= "about-item-partners")
 
             .about-text= content.about.text
