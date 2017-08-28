@@ -43,6 +43,59 @@
 
   "product": {
     "chapter": "ПРОДУКЦІЯ",
-    "title": "Каталог продукції"
+    "title": "Каталог продукції",
+
+    "item": {
+      "park": {
+        "first": {
+          "name": "Альпінпарк",
+          "price": "UAH 144,99",
+          "image": "static/img/content/o.png"
+        }
+      },
+      "pool": {
+        "first": {
+          "name": "Басейн з гіркою",
+          "price": "UAH 4,99",
+          "image": "static/img/content/a.png"
+        }
+      },
+      "alpine": {
+        "first": {
+          "name": "Гірка",
+          "price": "UAH 14,99",
+          "image": "static/img/content/b.png"
+        }
+      },
+      "water": {
+        "first": {
+          "name": "Водний атракціон",
+          "price": "UAH 164,99",
+          "image": "static/img/content/c.png"
+        }
+      },
+      "ball": {
+        "first": {
+          "name": "Куля",
+          "price": "UAH 34,99",
+          "image": "static/img/content/d.png"
+        }
+      },
+      "tent": {
+        "first": {
+          "name": "Намет",
+          "price": "UAH 124,99",
+          "image": "static/img/content/e.png"
+        }
+      },
+      "vest": {
+        "first": {
+          "name": "Рятувальний жилет",
+          "price": "UAH 76,99",
+          "image": "static/img/content/f.png"
+        }
+      }
+
+    }
   }
 }
