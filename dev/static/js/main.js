@@ -41,8 +41,8 @@ $( ".navbar" ).click(function() {
         tab.find('ul.tabs > li').removeClass('current');
         $(this).closest('li').addClass('current');
 
-        tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
-        tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+        tab.find('.tab-content').find('div.tabs-item').not('div.tabs-item:eq(' + index + ')').slideUp();
+        tab.find('.tab-content').find('div.tabs-item:eq(' + index + ')').slideDown();
 
         g.preventDefault();
     } );

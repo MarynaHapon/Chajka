@@ -13,3 +13,10 @@ mixin aboutItem(title, text)
 	.about-item(class!=attributes.class)
 		h4.about-item-title= title
 		p.about-item-text= text
+
+
+mixin productItem(name, price, image)
+	a.product-item(href="#")
+		img(src= image, alt= name).product-image
+		h4.product-name= name
+		p.product-price= price
