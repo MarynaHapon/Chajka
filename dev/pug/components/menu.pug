@@ -11,4 +11,10 @@
                             a(href= link)= title
 
 
+        .menu-burger
+            nav.navbar-burger
+                ul
+                    each link, title in nav.navPages
+                        li
+                            a(href= link)= title
             a(href= "#").burger &#9776;

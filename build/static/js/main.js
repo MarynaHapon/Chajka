@@ -22,19 +22,17 @@ $(document).ready(function() {
 
 
         // burger
-    if ($(window).width() < 768) {
+    if ($(window).width() <= 768) {
 
         $(".burger").click(function () {
-            $(".navbar").toggle("fast");
+            $(".navbar-burger").toggle("fast");
         });
 
-        $(".navbar").click(function () {
-            $(".navbar").toggle("slow");
+        $(".navbar-burger").click(function () {
+            $(".navbar-burger").toggle("slow");
         });
-    } else {
 
     }
-
 
         // tabs
     (function ($) {
