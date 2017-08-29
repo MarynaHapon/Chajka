@@ -54,9 +54,11 @@
         display none!important // solves the problematic of menu transitions
 
 
-    // start - products grid
 @media screen and (max-width: 650px)
     .product-item-group
+        flex-direction column
+
+    .gallery-item
         flex-direction column
 
 
@@ -65,6 +67,12 @@
         flex-direction row
         justify-content space-around
 
+    .gallery-item-group
+        flex-direction row
+
+    .gallery-item--large
+        size(480px,240px)
+
 
 @media screen and (max-width: 960px)
     .tabs
@@ -72,7 +80,15 @@
 
     .product-list
         flex-direction column
-    // end - products grid
+
+    .gallery-list
+        flex-direction column
+
+    .gallery-item
+        size(auto,240px)
+
+    .gallery-item--large
+        size(auto,240px)
 
 
 @media screen and (max-width: 1024px)
