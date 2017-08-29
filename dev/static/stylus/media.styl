@@ -48,6 +48,27 @@
         display none
 
 
+    // start - products grid
+@media screen and (max-width: 650px)
+    .product-item-group
+        flex-direction column
+
+
+@media screen and  (min-width: 650px) and (max-width: 960px)
+    .product-item-group
+        flex-direction row
+        justify-content space-around
+
+
+@media screen and (max-width: 960px)
+    .tabs
+        flex-direction column
+
+    .product-list
+        flex-direction column
+    // end - products grid
+
+
 @media screen and (max-width: 1024px)
     .navbar
         ul
