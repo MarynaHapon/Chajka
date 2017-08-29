@@ -14,10 +14,23 @@
 .gallery-item--large
     overflow hidden
     display flex
-    
+    justify-content flex-end
+
+    &:hover
+        justify-content flex-start
+
+    img
+        cursor pointer
+        transition 0.9s
+
+    img:hover
+        transform scale(1.2)
+
+
 
 .gallery-item
     size(240px)
+
 
 
 .gallery-item--large
