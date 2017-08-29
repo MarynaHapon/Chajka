@@ -22,17 +22,14 @@ $(document).ready(function() {
 
 
         // burger
-    if ($(window).width() <= 768) {
+    $(".burger").click(function () {
+        $(".navbar-burger").toggle("fast");
+    });
 
-        $(".burger").click(function () {
-            $(".navbar-burger").toggle("fast");
-        });
+    $(".navbar-burger").click(function () {
+        $(".navbar-burger").toggle("slow");
+    });
 
-        $(".navbar-burger").click(function () {
-            $(".navbar-burger").toggle("slow");
-        });
-
-    }
 
         // tabs
     (function ($) {
