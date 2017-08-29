@@ -97,5 +97,51 @@
       }
 
     }
+  },
+
+  "gallery": {
+    "chapter": "ГАЛЕРЕЯ",
+    "title": "Підбірка світлин",
+
+    "item": {
+      "bridge": {
+        "imgSrc": "static/img/content/gallery/bridge.jpeg",
+        "imgAlt": "bridge"
+      },
+      "building": {
+        "imgSrc": "static/img/content/gallery/building.jpeg",
+        "imgAlt": "building"
+      },
+      "metal": {
+        "imgSrc": "static/img/content/gallery/metal.jpeg",
+        "imgAlt": "metal"
+      },
+      "mountains": {
+        "imgSrc": "static/img/content/gallery/mountains.jpeg",
+        "imgAlt": "mountains"
+      },
+      "nature": {
+        "imgSrc": "static/img/content/gallery/nature.jpeg",
+        "imgAlt": "nature"
+      },
+      "stones": {
+        "imgSrc": "static/img/content/gallery/stones.jpeg",
+        "imgAlt": "stones"
+      },
+      "surfer": {
+        "imgSrc": "static/img/content/gallery/surfer.jpeg",
+        "imgAlt": "surfer"
+      },
+      "texture": {
+        "imgSrc": "static/img/content/gallery/texture.jpeg",
+        "imgAlt": "texture"
+      },
+      "waves": {
+        "imgSrc": "static/img/content/gallery/waves.jpeg",
+        "imgAlt": "waves"
+      }
+
+    }
   }
+
 }

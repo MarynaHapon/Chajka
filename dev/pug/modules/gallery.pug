@@ -1,3 +1,31 @@
 .wrapper
     section#gallery
         .inner
+            p.chapter= content.gallery.chapter
+            h2.title= content.gallery.title
+
+            .gallery-list
+                .gallery-item-group
+                    .gallery-item
+                        img(src= content.gallery.item.building.imgSrc, alt= content.gallery.item.building.imgAlt)
+                    .gallery-item
+                        img(src= content.gallery.item.metal.imgSrc, alt= content.gallery.item.metal.imgAlt)
+
+
+                .gallery-item-group
+                    .gallery-item
+                        img(src= content.gallery.item.mountains.imgSrc, alt= content.gallery.item.mountains.imgAlt)
+                    .gallery-item
+                        img(src= content.gallery.item.stones.imgSrc, alt= content.gallery.item.stones.imgAlt)
+
+                .gallery-item-group
+                    .gallery-item--large
+                        img(src= content.gallery.item.nature.imgSrc, alt= content.gallery.item.nature.imgAlt)
+
+
+                .gallery-item-group
+                    .gallery-item
+                        img(src= content.gallery.item.texture.imgSrc, alt= content.gallery.item.texture.imgAlt)
+
+                    .gallery-item
+                        img(src= content.gallery.item.waves.imgSrc, alt= content.gallery.item.waves.imgAlt)
