@@ -20,3 +20,30 @@ mixin productItem(name, price, image)
 		img(src= image, alt= name).product-image
 		h4.product-name= name
 		p.product-price= price
+
+
+mixin newsItemTab(title, subtitle, date, month, imgSrc, imgAlt)
+	.news-tab-img-wrap
+		img(src= imgSrc, alt= imgAlt).news-tab-img
+		.news-tab-date-group
+			p.news-tab-date= date
+			p.news-tab-month= month
+
+	h5.news-teb-title= title
+	p.news-teb-subtitle= subtitle
+
+
+mixin newsItemTabCurrent(title, text, enter, time, date, month, imgSrc, imgAlt)
+	.news-item-tab-current
+		.news-tab-img-current-wrap
+			img(src= imgSrc, alt= imgAlt).news-tab-img-current
+			p.news-tab-date-current-group= date + ' ' + month
+
+		.news-tab-text-current
+			p.news-tab-data-current= date + ' ' + month + ' ' + '2017'
+			h4.news-tab-title-current= title
+			p.news-tab-text-current= text
+
+			div
+				p.news-tab-enter-current= enter
+				p.news-tab-time-current= time

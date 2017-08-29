@@ -1,3 +1,28 @@
 .wrapper
     section#news
         .inner
+            p.chapter= content.news.chapter
+            h2.title= content.news.title
+
+            .news-tab
+                .news-tab-content
+                    .news-tabs-item.news-current-tub
+                        +newsItemTabCurrent(content.news.item.first.title, content.news.item.first.text, content.news.item.first.enter, content.news.item.first.time, content.news.item.first.date, content.news.item.first.month, content.news.item.first.imgSrc, content.news.item.first.imgAlt)
+
+                    .news-tabs-item
+                        +newsItemTabCurrent(content.news.item.second.title, content.news.item.second.text, content.news.item.second.enter, content.news.item.second.time, content.news.item.second.date, content.news.item.second.month, content.news.item.second.imgSrc, content.news.item.second.imgAlt)
+
+                    .news-tabs-item
+                        +newsItemTabCurrent(content.news.item.third.title, content.news.item.third.text, content.news.item.third.enter, content.news.item.third.time, content.news.item.third.date, content.news.item.third.month, content.news.item.third.imgSrc, content.news.item.third.imgAlt)
+
+
+                ul.news-tabs
+                    li.news-current
+                        a(href='#')
+                            +newsItemTab(content.news.item.first.title, content.news.item.first.subtitle, content.news.item.first.date, content.news.item.first.month, content.news.item.first.imgSrc, content.news.item.first.imgAlt)
+                    li
+                        a(href='#')
+                            +newsItemTab(content.news.item.second.title, content.news.item.second.subtitle, content.news.item.second.date, content.news.item.second.month, content.news.item.second.imgSrc, content.news.item.second.imgAlt)
+                    li
+                        a(href='#')
+                            +newsItemTab(content.news.item.third.title, content.news.item.third.subtitle, content.news.item.third.date, content.news.item.third.month, content.news.item.third.imgSrc, content.news.item.third.imgAlt)

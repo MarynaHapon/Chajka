@@ -142,6 +142,47 @@
       }
 
     }
+  },
+
+  "news": {
+    "chapter": "НОВИНИ",
+    "title": "Останні новини & події",
+
+    "item": {
+      "first": {
+        "title": "ВІДКРИТИЙ МАЙСТЕР-КЛАС",
+        "subtitle": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text": "Сьогодні запрошуємо всіх бажаючих приєднатися до активного відпочинку на озері. На Вас чекають супер-класні атракціони, веселі розваги та багато цікавих історій від мандрівників! Не пропустіть чудовий відпочинок для всієї родини!",
+        "enter": "Вхід вільний.",
+        "time": "Час проведення - з 14:00 до 20:00.",
+        "date": "18",
+        "month": "ЛИПНЯ",
+        "imgSrc": "static/img/content/news/masterclass1.png",
+        "imgAlt": "master class 1"
+      },
+      "second": {
+        "title": "ВІДКРИТИЙ МАЙСТЕР-КЛАС",
+        "subtitle": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text": "Сьогодні запрошуємо всіх бажаючих приєднатися до активного відпочинку на озері. На Вас чекають супер-класні атракціони, веселі розваги та багато цікавих історій від мандрівників! Не пропустіть чудовий відпочинок для всієї родини!",
+        "enter": "Вхід вільний.",
+        "time": "Час проведення - з 14:00 до 20:00.",
+        "date": "25",
+        "month": "ЛИПНЯ",
+        "imgSrc": "static/img/content/news/masterclass2.png",
+        "imgAlt": "master class 2"
+      },
+      "third": {
+        "title": "ВІДКРИТИЙ МАЙСТЕР-КЛАС",
+        "subtitle": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text": "Сьогодні запрошуємо всіх бажаючих приєднатися до активного відпочинку на озері. На Вас чекають супер-класні атракціони, веселі розваги та багато цікавих історій від мандрівників! Не пропустіть чудовий відпочинок для всієї родини!",
+        "enter": "Вхід вільний.",
+        "time": "Час проведення - з 14:00 до 20:00.",
+        "date": "27",
+        "month": "ЛИПНЯ",
+        "imgSrc": "static/img/content/news/masterclass3.png",
+        "imgAlt": "master class 3"
+      }
+    }
   }
 
 }
