@@ -4,12 +4,14 @@ $(document).ready(function() {
     var elm = document.querySelector("#menu");
     var ms = new MenuSpy(elm);
 
+
     // carousel
     $(".slogan-carousel").flickity({
         cellAlign: "center",
         contain: true,
         wrapAround: true
     });
+
 
     // sticky header
     $(window).on("scroll", function () {
@@ -50,7 +52,7 @@ $(document).ready(function() {
     })(jQuery);
 
 
-    // news product
+        // news product
     (function ($) {
         $('.news-tab ul.news-tabs').addClass('news-active').find('> li:eq(0)').addClass('news-current');
 
@@ -67,5 +69,10 @@ $(document).ready(function() {
             g.preventDefault();
         } );
     })(jQuery);
+
+
+
+
+
 
 });
