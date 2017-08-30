@@ -1,7 +1,6 @@
 .news-tab
     font-family 'Roboto', sans-serif
     overflow hidden
-    color #888
 
 
 .news-tabs
@@ -12,6 +11,13 @@
 
     li
         overflow hidden
+
+        &:hover
+            img
+                transform scale(1.05)
+
+            .news-tab-date-group
+                background-color $persian-green
 
     a
         width 300px
@@ -45,6 +51,8 @@
 
 .news-tab-img
     size(300px,180px)
+    overflow hidden
+    transition 2s
 
 
 .news-tab-date-group
@@ -94,14 +102,14 @@
 
 .news-tab-img-current-wrap
     position relative
-    size(625px, 400px)
+    size(630px, 400px)
 
 
 .news-tab-img-current
-    size(625px, 400px)
+    size(630px, 400px)
 
 
-.news-tab-text-current
+.news-tab-text-wrap-current
     display flex
     flex-direction column
     justify-content space-between
@@ -119,6 +127,7 @@
 
 
 .news-tab-data-current
+    padding 5px 0
     font-size 16px
     font-weight 400
     color $gray
@@ -126,16 +135,18 @@
 
 
 .news-tab-title-current
+    padding 5px 0
     font-size 24px
     color $matterhorn
 
 
 .news-tab-text-current
+    padding 5px 0
     line-height 28px
     font-size 18px
     color $matterhorn
 
-    
+
 .news-tab-enter-current
 .news-tab-time-current
     line-height 22px
