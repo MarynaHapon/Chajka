@@ -221,6 +221,31 @@
         "imgAlt": "partner 6"
       }
     }
+  },
+
+  "feedback": {
+    "title": "Відгуки клієнтів",
+    "item": {
+      "veper": {
+        "image": "static/img/content/feedback/veper.png",
+        "name": "Ronalld Veper,",
+        "position": "Baskin Brothres co.",
+        "text": "“Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initi ate inexpensiveios.",
+      },
+      "jamal": {
+        "image": "static/img/content/feedback/jamal.png",
+        "name": "Tresaa Jamal,",
+        "position": "New Wandam co.",
+        "text": "“Awesome empower leveraged ROI whereas effective web-readiness. Copletely enable emerging meta-services with cross-platform web services. Quickly ate inexpensive total linkaos.",
+      },
+      "methue": {
+        "image": "static/img/content/feedback/methue.png",
+        "name": "Jhone Methue,",
+        "position": "Wondos co.",
+        "text": "“Awesome empower leveraged ROI whereas effective web-readiness. Copletely enable emerging meta-services with cross-platform web services. Quickly ate inexpensive total linkaos.",
+      }
+    }
   }
+
 
 }
