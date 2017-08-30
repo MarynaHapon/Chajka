@@ -183,6 +183,44 @@
         "imgAlt": "master class 3"
       }
     }
+  },
+
+  "partners": {
+    "title": "Наші партнери",
+    "subtitle": "Компанії, з якими ми ведемо активну співпрацю по різноманітним проектам.",
+
+    "item": {
+      "partner1": {
+        "link": "#",
+        "imgSrc": "static/img/content/partners/partner1.png",
+        "imgAlt": "partner 1"
+      },
+      "partner2": {
+        "link": "#",
+        "imgSrc": "static/img/content/partners/partner2.png",
+        "imgAlt": "partner 2"
+      },
+      "partner3": {
+        "link": "#",
+        "imgSrc": "static/img/content/partners/partner3.png",
+        "imgAlt": "partner 3"
+      },
+      "partner4": {
+        "link": "#",
+        "imgSrc": "static/img/content/partners/partner4.png",
+        "imgAlt": "partner 4"
+      },
+      "partner5": {
+        "link": "#",
+        "imgSrc": "static/img/content/partners/partner5.png",
+        "imgAlt": "partner 5"
+      },
+      "partner6": {
+        "link": "#",
+        "imgSrc": "static/img/content/partners/partner6.png",
+        "imgAlt": "partner 6"
+      }
+    }
   }
 
 }

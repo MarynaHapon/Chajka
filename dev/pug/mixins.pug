@@ -47,3 +47,9 @@ mixin newsItemTabCurrent(title, text, enter, time, date, month, imgSrc, imgAlt)
 			div
 				p.news-tab-enter-current= enter
 				p.news-tab-time-current= time
+
+
+mixin partnerItem(link, imgSrc, imgAlt)
+	.partner-item
+		a(href= link)
+			img(src= imgSrc, alt= imgAlt)

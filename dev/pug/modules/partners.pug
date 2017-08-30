@@ -1,3 +1,15 @@
 .wrapper
     section#partners
         .inner
+            h2.partners-title= content.partners.title
+            p.partners-subtitle= content.partners.subtitle
+
+            .partners-list
+                +partnerItem(content.partners.item.partner1.link, content.partners.item.partner1.imgSrc, content.partners.item.partner1.imgAlt)
+                +partnerItem(content.partners.item.partner2.link, content.partners.item.partner2.imgSrc, content.partners.item.partner2.imgAlt)
+                +partnerItem(content.partners.item.partner3.link, content.partners.item.partner3.imgSrc, content.partners.item.partner3.imgAlt)
+                +partnerItem(content.partners.item.partner4.link, content.partners.item.partner4.imgSrc, content.partners.item.partner4.imgAlt)
+                +partnerItem(content.partners.item.partner5.link, content.partners.item.partner5.imgSrc, content.partners.item.partner5.imgAlt)
+                +partnerItem(content.partners.item.partner6.link, content.partners.item.partner6.imgSrc, content.partners.item.partner6.imgAlt)
+
+                
