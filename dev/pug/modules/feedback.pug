@@ -1,0 +1,27 @@
+.wrapper
+    .feedback
+        .inner
+            h2.feedback-title= content.feedback.title
+
+            .feedback-list
+                .feedback-item
+                    p.feedback-item-text= content.feedback.item.veper.text
+                    img(src= content.feedback.item.veper.image, alt= content.feedback.item.veper.name).feedback-item-img
+                    p.feedback-item-name= content.feedback.item.veper.name
+                    p.feedback-item-position= content.feedback.item.veper.position
+                    p.feedback-item-score= content.feedback.item.veper.score
+
+
+                .feedback-item
+                    p.feedback-item-text= content.feedback.item.jamal.text
+                    img(src= content.feedback.item.jamal.image, alt= content.feedback.item.jamal.name).feedback-item-img
+                    p.feedback-item-name= content.feedback.item.jamal.name
+                    p.feedback-item-position= content.feedback.item.jamal.position
+                    p.feedback-item-score= content.feedback.item.jamal.score
+
+                .feedback-item
+                    p.feedback-item-text= content.feedback.item.methue.text
+                    img(src= content.feedback.item.methue.image, alt= content.feedback.item.methue.name).feedback-item-img
+                    p.feedback-item-name= content.feedback.item.methue.name
+                    p.feedback-item-position= content.feedback.item.methue.position
+                    p.feedback-item-score= content.feedback.item.methue.score
