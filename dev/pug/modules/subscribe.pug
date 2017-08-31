@@ -1,0 +1,8 @@
+.wrapper
+    .subscribe
+        .inner
+            form(method='post').form-subscribe
+                input(name='email', type='email', placeholder='E-mail', title='youremail@gmail.com', required)
+                input(pattern='[0-9][A-Z]{3}', name='name', type='text', placeholder='Ім\'я та прізвище' , title = 'Ім\'я Прізвище', required)
+                input(type='submit', value='ПІДПИСАТИСЬ').btn.btn-subscribe
+

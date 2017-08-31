@@ -13,8 +13,6 @@
 
 
 section
-    //min-height 1080px
-    color #FFF
     text-align center
 
     &:after
@@ -35,6 +33,26 @@ section
     padding 80px 0
     font-size 60px
     color $matterhorn
+
+
+.btn
+    display block
+    font-weight 700
+    transition .2s
+    cursor pointer
+    background-color $jungle-green
+
+    &:hover
+        background-color $persian-green
+        color $baltic-sea
+
+    &:active
+        background-color $jungle-green
+
+
+input::placeholder
+textarea::placeholder
+    color $white
 
 
 #about
@@ -77,5 +95,10 @@ section
     box-shadow inset 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.3)
 
 
+.subscribe
+    background-color $baltic-sea
+
+
 #contacts
     //background-color deeppink
+
