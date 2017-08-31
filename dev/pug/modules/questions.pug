@@ -1,0 +1,18 @@
+.wrapper
+    .questions
+        .inner
+            h2.questions-title= content.questions.title
+            p.questions-subtitle= content.questions.subtitle
+
+            form(method='post').form-message
+                input(name='name', type='text', placeholder='Ім\'я та прізвище' , title='Ім\'я Прізвище', required)
+                input(name='email', type='email', placeholder='E-mail', title='youremail@gmail.com', required)
+                input(pattern='[\\+]\\d{2}[\\(]\\d{2}[\\)]\\d{4}[\\-]\\d{4}', name='telephone', type='tel', placeholder='Номер телефону', title='+99(99)9999-9999)', required)
+                textarea(name='message', rows='10', cols='30', placeholder='Текст повідомлення')
+                input(type='submit', value='Відправити')
+
+            form(method='post').form-subscription
+                input(name='email', type='email', placeholder='E-mail', title='youremail@gmail.com', required)
+                input(pattern='[0-9][A-Z]{3}', name='name', type='text', placeholder='Ім\'я та прізвище' , title='Ім\'я Прізвище', required)
+                input(type='submit', value='Підписатись')
+
