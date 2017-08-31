@@ -1,0 +1,23 @@
+.wrapper
+    footer
+        .inner-footer
+            .footer-social
+                a(href="#").fooder-link
+                    i.sprite.sprite-facebook
+
+                a(href="#").fooder-link
+                    i.sprite.sprite-tumblr
+
+                a(href="#").fooder-link
+                    i.sprite.sprite-twitter
+
+                a(href="#").fooder-link
+                    i.sprite.sprite-vk
+
+
+            ul.footer-nav
+                each link, title in nav.navPages
+                    li
+                        a(href= link)= title
+
+            p.footer-copyright= content.footer.copyright

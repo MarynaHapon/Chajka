@@ -270,5 +270,9 @@
       "tel": "Phone: 410-601-3588",
       "email": "Email: info@chajka.com"
     }
+  },
+
+  "footer": {
+    "copyright": "Copyright © 2017 Chajka. All rights reserved."
   }
 }
