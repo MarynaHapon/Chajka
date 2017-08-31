@@ -1,6 +1,18 @@
 .wrapper
     section#contacts
         #map
-            .inner
 
-                .contects-list
+        .contects-list
+            .contact-item
+                h5.contact-title= content.contact.address.title
+                p.contact-text= content.contact.address.item
+
+            .contact-item
+                h5.contact-title= content.contact.hour.title
+                p.contact-text= content.contact.hour.from
+                p.contact-text= content.contact.hour.to
+
+            .contact-item
+                h5.contact-title= content.contact.contact.title
+                p.contact-text= content.contact.contact.tel
+                p.contact-text= content.contact.contact.email
