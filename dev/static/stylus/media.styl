@@ -146,6 +146,31 @@
         width 100%
 
 
+@media screen and (max-width: 500px)
+    .form-message-inner
+        textarea
+        input[type='text']
+        input[type='email']
+        input[type='tel']
+            width calc(100vw - 40px)
+
+    .btn-message
+        width calc(100vw - 80px)
+
+
+@media screen and (max-width: 980px)
+    .form-message-inner
+        flex-direction column
+        align-items center
+
+    .form-message
+        textarea
+        input[type='text']
+        input[type='email']
+        input[type='tel']
+            margin 10px 0
+
+
 @media screen and (max-width: 960px)
     .tabs
         flex-direction column
