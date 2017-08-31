@@ -71,8 +71,120 @@ $(document).ready(function() {
     })(jQuery);
 
 
+        // map
+    function initMap() {
+        var uluru = {lat: 49.839919, lng:  24.028002};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru,
+            styles: [
+                {
+                    elementType: 'geometry',
+                    stylers: [{color: '#f5f5f5'}]
+                },
+                {
+                    elementType: 'labels.icon',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#28ad78'}]
+                },
+                {
+                    elementType: 'labels.text.stroke',
+                    stylers: [{color: '#f5f5f5'}]
+                },
+                {
+                    featureType: 'administrative.land_parcel',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#28ad78'}]
+                },
+                {
+                    featureType: 'poi',
+                    elementType: 'geometry',
+                    stylers: [{color: '#eeeeee'}]
+                },
+                {
+                    featureType: 'poi',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#757575'}]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'geometry',
+                    stylers: [{color: '#e5e5e5'}]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#9e9e9e'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [{color: '#ffffff'}]
+                },
+                {
+                    featureType: 'road.arterial',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#757575'}]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry',
+                    stylers: [{color: '#dadada'}]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#616161'}]
+                },
+                {
+                    featureType: 'road.local',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#9e9e9e'}]
+                },
+                {
+                    featureType: 'transit.line',
+                    elementType: 'geometry',
+                    stylers: [{color: '#e5e5e5'}]
+                },
+                {
+                    featureType: 'transit.station',
+                    elementType: 'geometry',
+                    stylers: [{color: '#eeeeee'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry',
+                    stylers: [{color: '#00abaa'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#00abaa'}]
+                }
+            ]
+        });
 
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: pinSymbol('#28ad78')
+        });
+    }
 
+    function pinSymbol(color) {
+        return {
+            path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z',
+            fillColor: color,
+            fillOpacity: 1,
+            strokeColor: '#28ad78',
+            strokeWeight: 2,
+            scale: 1
+        };
+    }
 
+    initMap()
 
 });
