@@ -455,16 +455,20 @@
             <h2 class="questions-title">Виникли запитання?</h2>
             <p class="questions-subtitle">Наші менеджери дадуть відповіді на Ваші питання.</p>
             <form class="form-message" method="post">
-              <input name="name" type="text" placeholder="Ім'я та прізвище" title="Ім'я Прізвище" required>
-              <input name="email" type="email" placeholder="E-mail" title="youremail@gmail.com" required>
-              <input pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" name="telephone" type="tel" placeholder="Номер телефону" title="+99(99)9999-9999)" required>
-              <textarea name="message" rows="10" cols="30" placeholder="Текст повідомлення"></textarea>
-              <input type="submit" value="Відправити">
+              <div class="form-message-inner">
+                <div class="form-input-wrap">
+                  <input name="name" type="text" placeholder="Ім'я та прізвище" title="Ім'я Прізвище" required>
+                  <input name="email" type="email" placeholder="E-mail" title="youremail@gmail.com" required>
+                  <input pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" name="telephone" type="tel" placeholder="Номер телефону" title="+99(999)999-9999" required>
+                </div>
+                <textarea name="message" rows="8" cols="30" placeholder="Текст повідомлення" required></textarea>
+              </div>
+              <input class="btn btn-message" type="submit" value="ВІДПРАВИТИ">
             </form>
-            <form class="form-subscription" method="post">
+            <form class="form-subscribe" method="post">
               <input name="email" type="email" placeholder="E-mail" title="youremail@gmail.com" required>
               <input pattern="[0-9][A-Z]{3}" name="name" type="text" placeholder="Ім'я та прізвище" title="Ім'я Прізвище" required>
-              <input type="submit" value="Підписатись">
+              <input class="btn btn-subscribe" type="submit" value="ПІДПИСАТИСЬ">
             </form>
           </div>
         </div>
