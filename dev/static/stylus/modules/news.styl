@@ -1,5 +1,4 @@
 .news-tab
-    font-family 'Roboto', sans-serif
     overflow hidden
 
 
@@ -40,11 +39,6 @@
     display block
 
 
-.news-current a
-    //color $jungle-green
-    //border-top 2px solid $jungle-green
-
-
 .news-tab-img-wrap
     position relative
 
@@ -55,6 +49,7 @@
     transition 2s
 
 
+
 .news-tab-date-group
     position(absolute, , 0px, 10px, )
     display flex
@@ -63,12 +58,12 @@
     align-items center
     size(50px,60px)
     background-color $jungle-green
+    box-shadow 0 2px 2px rgba(0, 0, 0, 0.3)
 
 
 .news-tab-date
 .news-tab-month
     color $white
-    font-family 'Roboto', sans-serif
 
 
 .news-tab-date
@@ -80,18 +75,17 @@
     font-size 10px
 
 
-.news-teb-title
+.news-tab-title
     line-height 32px
     font-size 11px
     font-weight 800
     color $gray3
 
 
-.news-teb-subtitle
+.news-tab-subtitle
     line-height 16px
     font-size 11px
     color $gray4
-    font-family 'Roboto', sans-serif
 
 
 .news-item-tab-current
@@ -114,16 +108,7 @@
     flex-direction column
     justify-content space-between
     width 300px
-    font-family 'Roboto', sans-serif
     text-align left
-
-
-.news-tab-text-current
-.news-tab-data-current
-.news-tab-enter-current
-.news-tab-time-current
-.news-tab-date-current-group
-    font-family 'Roboto', sans-serif
 
 
 .news-tab-data-current
@@ -161,3 +146,4 @@
     font-size 30px
     font-weight 700
     color $white
+    box-shadow 0 2px 2px rgba(0, 0, 0, 0.3)

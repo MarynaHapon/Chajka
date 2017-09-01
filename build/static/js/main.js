@@ -1,35 +1,35 @@
 $(document).ready(function() {
 
     // menu
-    var elm = document.querySelector("#menu");
+    var elm = document.querySelector('#menu');
     var ms = new MenuSpy(elm);
 
 
     // carousel
-    $(".slogan-carousel").flickity({
-        cellAlign: "center",
+    $('.slogan-carousel').flickity({
+        cellAlign: 'center',
         contain: true,
         wrapAround: true
     });
 
 
     // sticky header
-    $(window).on("scroll", function () {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 0) {
-            $("#menu-top").addClass("navbar-fixed-top");
+            $('#menu-top').addClass('navbar-fixed-top');
         } else {
-            $("#menu-top").removeClass("navbar-fixed-top");
+            $('#menu-top').removeClass('navbar-fixed-top');
         }
     });
 
 
         // burger
-    $(".burger").click(function () {
-        $(".navbar-burger").toggle("fast");
+    $('.burger').click(function () {
+        $('.navbar-burger').toggle('fast');
     });
 
-    $(".navbar-burger").click(function () {
-        $(".navbar-burger").toggle("slow");
+    $('.navbar-burger').click(function () {
+        $('.navbar-burger').toggle('slow');
     });
 
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
     function initMap() {
         var uluru = {lat: 49.839919, lng:  24.028002};
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
+            zoom: 10,
             center: uluru,
             styles: [
                 {
