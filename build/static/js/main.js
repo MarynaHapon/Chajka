@@ -186,5 +186,5 @@ $(document).ready(function() {
     }
 
     initMap()
-    
+
 });
