@@ -1,5 +1,5 @@
 # Chajka
-Website - [link](https://marynahapon.github.io/Chajka/build/index.html)
+Adaptive website - [link](https://marynahapon.github.io/Chajka/build/index.html)
 
 ## Technologies
 
@@ -40,17 +40,39 @@ $ gulp
 - ``serve``
 - ``watch``
 
+## Storing Data
+**File** ``content.json`` :
+```
+"footer": {
+  "copyright": "Copyright © 2017 Chajka. All rights reserved."
+}
+```
 
+## Using Data
+**File** ``footer.pug``
+
+```
+p= content.footer.copyright
+```
+**File** ``pug.js``
+
+```
+content: JSON.parse($.fs.readFileSync('./data/content.json', 'utf8'))
+```
 
 ## Project Structure
 
 ```
-.
 ├── /build/                         # Minified, optimized and compiled files.
 │   ├── /static/                    # Static folder.
 │   │   ├── /css/                   # CSS style files.
 │   │   ├── /img/                   # Static files.
 │   │   │   └── /content/             # Images folder.
+│   │   │   │   └── /feedback           # Images folder.
+│   │   │   │   └── /gallery            # Images folder.
+│   │   │   │   └── /news               # Images folder.
+│   │   │   │   └── /partners           # Images folder.
+│   │   │   │   └── /product            # Images folder.
 │   │   │   └── /general/             # Images folder.
 │   │   └── /js/                    # JS files.
 │   └── *.html                      # Rendered and compiled HTMLs from Pug.
@@ -68,6 +90,11 @@ $ gulp
 │   │   ├── /fonts/                 # Fonts folder.
 │   │   ├── /img/                   # Dev folder.
 │   │   │   └── /content/             # Images folder.
+│   │   │   │   └── /feedback           # Images folder.
+│   │   │   │   └── /gallery            # Images folder.
+│   │   │   │   └── /news               # Images folder.
+│   │   │   │   └── /partners           # Images folder.
+│   │   │   │   └── /product            # Images folder.
 │   │   │   └── /general/             # Images folder.
 │   │   │   └── /svg/                 # Images folder.
 │   │   ├── /js/                    # JavaScript files.
